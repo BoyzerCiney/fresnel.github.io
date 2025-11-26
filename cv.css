@@ -1,0 +1,113 @@
+
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+a{
+  text-decoration:none;
+  color: antiquewhite;
+}
+
+a: hover{
+   text-decoration:underline;
+}
+
+p{
+   margin: 0 0 1rem;   
+}
+
+h1{
+  margin: 0 0 1rem;
+  letter-spacing: 1px;
+  text-transform:uppercase;
+}
+
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenaire-cv{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-areas: "left-column  right-column right-column";
+  width: 1200px;
+  margin: 100px auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+.section{
+  margin-bottom: 1.5rem;
+}
+
+.left-column{
+  grid-area: left-column;
+  padding: 100px;
+  background-color:darkslategrey;
+  
+  
+}
+
+.portrait{
+  border-radius: 50%;
+  max-width: 150px;
+  margin:auto;
+  display:block;
+  margin-bottom: 25px;
+
+}
+
+.skills{
+  list-style-type:none;
+  padding: 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin: 0 0 1rem;
+}
+
+.right-column{
+  grid-area: right-column;
+  display: grid;
+  grid-template-rows: 250px 1fr;
+  grid-template-areas: "en-tete" 
+  "content";
+  background-color:antiquewhite;
+  
+}
+
+.en-tete{
+  grid-area: en-tete;
+  padding: 50px;
+  background-color:silver;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.infos{
+  columns: 2;
+  list-style-type: none;
+  padding: 0;
+
+}
+
+.content{
+  grid-area: content;
+  padding:50px;
+  
+}
+
+.liste-experience{
+  list-style-type: circle;
+
+}
+
+#lien{
+  color: cornflowerblue;
+}
+
